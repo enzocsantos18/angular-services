@@ -1,3 +1,11 @@
 <h2>Home</h2>
 <h3>Enzo de Carvalho Santos</h3>
 <a href="https://github.com/enzocsantos18"> Meu github</a>
+
+<hr />
+<section>
+  <h3>Temporizador</h3>
+  <p>{{ timer.getCount() }}s</p>
+  <button (click)="timer.start(500)">Start</button>
+  <button (click)="timer.stop()">Stop</button>
+</section>
