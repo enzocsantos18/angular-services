@@ -1,0 +1,13 @@
+<h2>Tarefas</h2>
+
+<form>
+  <input #input type="text" />
+  <button (click)="tasks.add(input.value); input.value = ''">Adicionar</button>
+</form>
+
+<ul>
+  <li *ngFor="let task of tasks.getList(); index as i">
+    {{ task.title }} ::
+    <button (click)="tasks.remove(i)" style="cursor: pointer;">Remover</button>
+  </li>
+</ul>
